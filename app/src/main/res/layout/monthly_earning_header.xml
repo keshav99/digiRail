@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin">
+
+    <LinearLayout
+        android:padding="@dimen/activity_horizontal_margin"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="@drawable/bottom_border_textview"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:paddingTop="@dimen/activity_horizontal_margin"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/pineApple"
+            android:layout_height="wrap_content"
+            android:text="@string/header_monthly" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:paddingLeft="10dp"
+            android:layout_marginLeft="-80dp"
+            android:textColor="@color/darkSienna"
+            android:layout_height="wrap_content"
+            android:text="@string/header_earning" />
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:gravity="center"
+        style="@style/profile_info_text_view"
+        android:padding="@dimen/activity_horizontal_margin"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_width="0dp"
+            android:textColor="#4a4a4a"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="Total Earning" />
+
+            <TextView
+                android:textColor="#00b433"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_height="match_parent"
+                android:id="@+id/earning_total"
+                android:text="@string/dev_monthly_earning" />
+
+    </LinearLayout>
+
+</LinearLayout>

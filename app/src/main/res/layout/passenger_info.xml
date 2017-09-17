@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="@dimen/normal"
+    android:layout_marginRight="@dimen/normal"
+    android:layout_marginBottom="@dimen/activity_horizontal_margin"
+    app:cardCornerRadius="@dimen/normal"
+    app:cardElevation="@dimen/normal">
+<LinearLayout
+    android:id="@+id/main_container"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:gravity="start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            layout="@layout/coach_name_item"
+            android:id="@+id/seat_no"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"/>
+
+        <android.support.v4.widget.Space
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/background_from"
+            android:textSize="16sp"
+            android:paddingLeft="@dimen/activity_vertical_margin"
+            android:paddingTop="@dimen/normal"
+            android:paddingBottom="@dimen/normal"
+            android:paddingRight="@dimen/activity_vertical_margin"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:fontFamily="monospace"
+            android:text="STR"/>
+
+        <!--<ImageView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"/>-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@drawable/background_to"
+            android:textSize="16sp"
+            android:paddingLeft="@dimen/activity_vertical_margin"
+            android:paddingTop="@dimen/normal"
+            android:paddingBottom="@dimen/normal"
+            android:paddingRight="@dimen/activity_vertical_margin"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:fontFamily="monospace"
+            android:text="KTP"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="18sp"
+            android:id="@+id/passenger_info_name"
+            android:textStyle="bold"
+            android:textColor="@color/deepKoamaru"
+            android:padding="@dimen/normal"
+            android:text="@string/dev_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/passenger_info_mobile"
+            android:text="@string/dev_number"
+            android:paddingLeft="@dimen/normal"
+            android:paddingBottom="@dimen/normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:fontFamily="monospace"
+            android:text="PNR number"
+            android:id="@+id/passenger_info_pnr"
+            android:textColor="@color/colorAccent"
+            android:layout_width="wrap_content"
+            android:paddingLeft="@dimen/normal_textview"
+            android:paddingRight="@dimen/normal_textview"
+            android:paddingBottom="@dimen/normal"
+            android:paddingTop="@dimen/normal"
+            android:background="@drawable/border_all"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/otp_section"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:maxLength="1"
+                android:hint="O"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textSize="18sp"
+                android:inputType="number"
+                android:id="@+id/otp_first_number"
+                android:layout_margin="@dimen/normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:maxLength="1"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textSize="18sp"
+                android:hint="T"
+                android:inputType="number"
+                android:id="@+id/otp_second_number"
+                android:layout_margin="@dimen/normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textSize="18sp"
+                android:maxLength="1"
+                android:hint="P"
+                android:inputType="number"
+                android:id="@+id/otp_third_number"
+                android:layout_margin="@dimen/normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:text="STR"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:text="KTP"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>-->
+
+</LinearLayout>
+</android.support.v7.widget.CardView>

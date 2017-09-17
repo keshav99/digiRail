@@ -1,0 +1,232 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:background="#fff"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:contentDescription="@string/content_description_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/profile_back_ground"
+            android:layout_marginTop="-200dp"
+            android:layout_marginBottom="-80dp"
+            android:id="@+id/profile_background_image" />
+
+        <ImageView
+            android:padding="10dp"
+            android:layout_marginTop="-50dp"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:contentDescription="@string/nav_string_my_profile"
+            android:id="@+id/image_profile_pic"
+            android:layout_width="100dp"
+            android:layout_below="@id/profile_background_image"
+            android:background="@drawable/border_all"
+            android:layout_height="100dp"
+            app:srcCompat="@mipmap/ic_launcher"/>
+        <!--android:layout_marginTop="-50dp"
+        android:layout_below="@id/profile_background_image"-->
+
+        <!--<TextView
+            tools:text="@string/profile_change_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_profile_pic"
+            android:id="@+id/text_change_photo"
+            android:textColor="#7777ff"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/normal"/>-->
+
+        <!--<TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_change_photo"
+            android:text="@string/profile_personal_info"
+            android:id="@+id/profile_personal_info"
+            android:background="@drawable/bottom_border"
+            style="@style/profile_info_header"/>-->
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/profile_personal_info_data"
+            android:layout_below="@id/image_profile_pic"
+            android:layout_width="match_parent"
+            style="@style/profile_info_header"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                style="@style/profile_info_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:scaleType="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/profile_name"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/profile_name"
+                    style="@style/profile_info_text_view"
+                    android:text="@string/dev_name"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/profile_info_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:scaleType="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/profile_email"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/profile_email"
+                    style="@style/profile_info_text_view"
+                    android:text="@string/dev_email"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/profile_number_layout"
+                style="@style/profile_info_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:scaleType="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/profile_number"/>
+
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/profile_number"
+                    style="@style/profile_info_text_view"
+                    android:text="@string/dev_number"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--<TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_personal_info_data"
+            android:text="@string/profile_employee_info"
+            android:id="@+id/profile_employee_information"
+            android:background="@drawable/bottom_border"
+            style="@style/profile_info_header"/>-->
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/profile_employee_info_data"
+            android:layout_below="@id/profile_personal_info_data"
+            android:layout_width="match_parent"
+            style="@style/profile_info_header"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                style="@style/profile_info_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:scaleType="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/profile_zone_info"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/profile_zone"
+                    style="@style/profile_info_text_view"
+                    android:text="@string/dev_zone"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/profile_info_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:scaleType="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/profile_adhaar"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/profile_addhaar_number"
+                    style="@style/profile_info_text_view"
+                    android:text="@string/dev_aadhaar"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/profile_info_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:scaleType="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/profile_address"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/profile_address"
+                    style="@style/profile_info_text_view"
+                    android:textStyle="bold"
+                    android:text="@string/dev_address"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/profile_info_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:scaleType="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/profile_number_alt"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/profile_employee_number"
+                    style="@style/profile_info_text_view"
+                    android:text="@string/dev_number_alt"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

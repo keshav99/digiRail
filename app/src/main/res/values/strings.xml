@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">DigiRail</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="login_heading_name"><b>Digi</b>Rail</string>
+    <string name="action_support_button"><u>Help and Support</u></string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions."</string>
+    <string name="next">Next</string>
+
+    <!-- Strings related to Titles -->
+    <string name="title_activity_main">Profile</string>
+    <string name="title_my_profile">Profile</string>
+    <string name="title_earnings">Earnings</string>
+
+    <!-- Strings related to My Profile-->
+    <string name="profile_change_photo">Change Photo</string>
+    <string name="profile_personal_info">Personal Information</string>
+    <string name="dev_name">Name</string>
+    <string name="dev_email">Email Id</string>
+    <string name="dev_address">Permanent Address</string>
+    <string name="content_description_background">Profile Background</string>
+    <string name="dev_number">Mobile Number</string>
+    <string name="profile_employee_info">Employee Information</string>
+    <string name="dev_zone">Zone Information</string>
+    <string name="dev_aadhaar">Adhaar Number</string>
+    <string name="dev_number_alt">Alternative Number</string>
+
+    <!-- Strings related to my Earning -->
+
+    <string name="dev_monthly_earning">Jan\'17</string>
+    <string name="dev_amount">100000</string>
+    <string name="dev_earning">5000</string>
+    <string name="header_today">Today\'s Earning</string>
+    <string name="header_monthly">Monthly</string>
+    <string name="header_earning">Earning</string>
+    <string name="current_month">Current</string>
+
+    <!-- Strings related to Navigation Drawer -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_stringcurrent_train">Current Train</string>
+    <string name="nav_string_my_earning">My Earning</string>
+    <string name="nav_string_penalty">Penalty</string>
+    <string name="nav_string_support">Support</string>
+    <string name="nav_string_logout">Logout</string>
+    <string name="nav_string_my_profile">My Profile</string>
+    <string name="nav_string_history">History</string>
+
+    <!-- Strings related to Options menu -->
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Strings related to Trains -->
+    <string name="dev_train_name">Dev TrainName</string>
+    <string name="dev_train_number">127001</string>
+    <string name="dev_train_station">STR</string>
+    <string name="dev_train_date">Train Date</string>
+    <string name="dev_train_time">Train Time</string>
+
+</resources>

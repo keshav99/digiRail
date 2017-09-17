@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:background="@drawable/bottom_border_textview"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_margin="@dimen/normal"
+                android:gravity="end"
+                android:layout_width="0dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                style="@style/profile_info_text_view"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/earning_month_edit"
+                android:text="@string/dev_monthly_earning" />
+
+            <TextView
+                android:gravity="start"
+                android:layout_margin="@dimen/normal"
+                style="@style/profile_info_text_view"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/earning_year_edit"
+                android:text="2017" />
+
+        </LinearLayout>
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/earning_amount_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dev_amount"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_gravity="start"
+        android:gravity="start"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:layout_width="wrap_content"
+            android:scaleType="center"
+            android:id="@+id/earning_rupee"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/rupee_filled_24"/>
+
+        <TextView
+            android:layout_marginRight="18dp"
+            android:paddingBottom="@dimen/normal"
+            android:textSize="18sp"
+            android:id="@+id/earning_earn_edit"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/pineApple"
+            android:gravity="center_vertical|end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/dev_earning"/>
+
+    </LinearLayout>
+
+</LinearLayout>

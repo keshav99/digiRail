@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#593f62</color>
+    <color name="colorPrimaryDark">#8499b1</color>
+    <color name="colorAccent">#36151e</color>-->
+    <color name="colorPrimary">#003459</color>
+    <!-- <color name="colorPrimary">#593f62</color> -->
+    <color name="colorPrimaryDark">#8499b1</color>
+    <color name="colorAccent">#36151e</color>
+    <color name="darkSienna">#36151E</color>
+    <color name="pineApple">#593F62</color>
+    <color name="rthym">#7B6D8D</color>
+    <color name="weldonBlue">#8499B1</color>
+    <color name="pastelBlue">#a5c4d4</color>
+    <color name="deepKoamaru">#273469</color>
+
+    <color name="login_background">#dbfffd</color>
+</resources>

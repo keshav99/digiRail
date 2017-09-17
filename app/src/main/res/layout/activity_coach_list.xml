@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:padding="@dimen/activity_horizontal_margin"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:elevation="@dimen/normal"
+        android:translationZ="@dimen/normal"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="@color/pastelBlue">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:gravity="center_vertical"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textAppearance="?android:attr/textAppearanceButton"
+                    android:text="@string/dev_train_name"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:padding="@dimen/normal"
+                    android:gravity="center_vertical"
+                    android:text="@string/dev_train_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:textSize="14sp"
+                    android:fontFamily="monospace"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorAccent"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textColor="@color/colorPrimary"
+                    android:padding="@dimen/normal"
+                    android:text="@string/dev_train_date"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:gravity="end|center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:padding="@dimen/normal"
+                    android:fontFamily="monospace"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorPrimary"
+                    android:text="@string/dev_train_time"
+                    android:gravity="end|center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/normal_textview">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="@drawable/background_fromto"
+                android:textSize="16sp"
+                android:paddingLeft="@dimen/activity_vertical_margin"
+                android:paddingTop="@dimen/normal"
+                android:paddingBottom="@dimen/normal"
+                android:paddingRight="@dimen/activity_vertical_margin"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:fontFamily="monospace"
+                android:text="STR"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:background="@drawable/background_fromto"
+                    android:textSize="16sp"
+                    android:paddingLeft="@dimen/activity_vertical_margin"
+                    android:paddingTop="@dimen/normal"
+                    android:paddingBottom="@dimen/normal"
+                    android:paddingRight="@dimen/activity_vertical_margin"
+                    android:textColor="#fff"
+                    android:backgroundTint="@android:color/holo_red_dark"
+                    android:textStyle="bold"
+                    android:fontFamily="monospace"
+                    android:text="KTP"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--<include layout="@layout/passenger_info"/>-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/normal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/normal"
+                style="@style/coach_type_header"
+                android:text="Sleeper Coach"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="wrap_content"
+                android:id="@+id/sleeper_coach_list_view"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/normal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/coach_type_header"
+                    android:padding="@dimen/normal"
+                    android:text="AC Coach"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/ac_coach_list_view"
+                    android:layout_height="wrap_content">
+
+                </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</ScrollView>
